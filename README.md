@@ -1,16 +1,25 @@
 # C# in memory WebAPI examples
 
-This solution contains two projects:
-
-Essentially both projects use a repository layer between the api and data.
-
-
-## csharp-webapi-inmemory.staticexample  
-
-This project holds api data in the static WeatherForecastStore class.   This wraps a WeatherForecasts property which is a list of all  
-the WeatherForecast items.
+Introduces the DataContext and the Entity Framework InMemory Database 
+ */**/bin/Debug   
+*/**/bin/Release   
+*/**/obj/Debug   
+*/**/obj/Release   
+TodoApi/appsettings.json
+TodoApi/appsettings.Development.json
 
 
-## csharp-webapi-inmemory.efexample  
 
-This project introduces Entity Framework.  This project holds api data using the Entity framwork in memory database. 
+```
+install-package Microsoft.EntityFrameworkCore.InMemory
+
+install-package Microsoft.EntityFrameworkCore.design  
+
+install-package Microsoft.EntityFrameworkCore.relational  
+
+install-package Microsoft.EntityFrameworkCore.tools  
+
+install-package npgsql.EntityFrameworkCore.postgresql
+
+install-package System.Configuration.ConfigurationManager  
+```
