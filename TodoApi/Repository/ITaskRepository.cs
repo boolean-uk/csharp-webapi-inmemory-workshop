@@ -2,14 +2,14 @@
 
 namespace TodoApi.Repository
 {
-    public interface ITaskRepository
+    public interface ITaskRepository<T>
     {
-        public List<TaskItem> GetAllTasks();
+        public List<T> GetAll();
 
-        public TaskItem AddTask(string taskTitle);
+        public T Add(string taskTitle);
 
-        public TaskItem? GetTask(int id);
+        public T? GetSingle(int id);
 
-        public TaskItem? UpdateTask(int id, TaskItemUpdatePayload updateData);
+        public T? Update(int id, TaskItemUpdatePayload updateData);
     }
 }
